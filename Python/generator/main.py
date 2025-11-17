@@ -20,3 +20,18 @@ next(gen)  # 2
 next(gen)  # 3
 next(gen)  # StopIteration
 
+# When Python sees a yield:
+
+# It pauses the function and returns a value.
+
+# The function’s internal state is saved (local variables, instruction pointer).
+
+# When you call next() again, execution resumes right after the yield.
+
+# Generator Expressions
+# Short form of generators:
+
+gen = (x*x for x in range(5))
+
+# List comprehension → makes a full list
+# Generator expression → generates lazily
